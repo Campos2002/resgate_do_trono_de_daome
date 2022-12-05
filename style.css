@@ -140,3 +140,28 @@ nav {
 .nav__socials a:hover {
     box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.4);
 }
+
+/* Nav Class - Scroll Use - JS */
+
+.window-scrolled {
+    background: var(--color-bg-2);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+/* --------------------- HEADER -------------------- */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient(var(--color-bg-3), var(--color-bg-1));
+    /* overflow: hidden; */
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 7%;
+}
