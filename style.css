@@ -1,7 +1,8 @@
 /* Google Fonts - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-/* ------------------- VARIABLES ------------------- */
+/* ============================= VARIABLES ============================== */
+
 :root {
     /* Green Theme */
     --color-primary: #ff7b02;
@@ -31,7 +32,8 @@
     --transition: all 400ms ease;
 }
 
-/* ----------------- GENERAL STYLES ---------------- */
+/* ========================== GENEREAL STYLES =========================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -48,9 +50,9 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--color-bg-3);
-    color: var(--color-light);
     line-height: 1.7;
+    color: var(--color-light);
+    background: var(--color-bg-3);
 }
 
 h1,
@@ -89,7 +91,7 @@ img {
     max-width: 2160px;
 }
 
-/* --------------------- NAVBAR -------------------- */
+/* =============================== NAVBAR =============================== */
 
 nav {
     height: 5rem;
@@ -142,14 +144,13 @@ nav {
 }
 
 /* Nav Class - Scroll Use - JS */
-
 .window-scrolled {
     background: var(--color-bg-2);
     border-bottom: 0.2rem solid var(--color-bg-3);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
 }
 
-/* --------------------- HEADER -------------------- */
+/* =============================== HEADER =============================== */
 
 header {
     width: 100vw;
@@ -162,6 +163,111 @@ header {
 
 .header__container {
     display: grid;
-    grid-template-columns: 40% 50%;
-    gap: 7%;
+    grid-template-columns: 40% 54%;
+    gap: 3%;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.header__image-bg {
+    background-color: var(--color-bg-4);
+    height: 22rem;
+    width: 16rem;
+    position: absolute;
+}
+
+.header__head {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.emprty {
+    height: 1.4rem;
+    width: 18rem;
+    background: var(--color-bg-2);
+    border-radius: calc(3.5rem / 2);
+    margin-bottom: 3.5rem;
+    box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-bg-4);
+}
+
+.header__tag {
+    color: var(--color-primary-variant);
+}
+
+.header__right p {
+    margin-top: 1.7rem;
+    margin-bottom: 1rem;
+    width: 85%;
+}
+
+/* Only shows on Tablet and Phones */
+.header__btn-md {
+    display: none;
+}
+
+/* HEADER ANIMATION SECTION ------------------------ */
+/* Animation - Girl Picture ------------------- */
+.header__image-lg {
+    width: 29rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: var(--transition);
+}
+
+.header__image-sm {
+    width: 28rem;
+    height: 28rem;
+    overflow: hidden;
+    position: absolute;
+    left: 6rem;
+    top: 6rem;
+    transition: var(--transition);
+}
+
+.header__left:hover .header__image-lg {
+    filter: saturate(1) brightness(1);
+    border: 1rem solid var(--color-bg-4);
+    top: 0;
+    left: 0;
+}
+
+.header__left:hover .header__image-sm {
+    opacity: 0;
+}
+
+/* Animation - Bottom Picture ----------------- */
+.header__frames {
+    position: absolute;
+    top: 88vh;
+    right: 44rem;
+    transition: var(--transition);
+}
+
+.header__frame {
+    width: 14rem;
+    border: 0.4rem solid var(--color-bg-3);
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+    transition: var(--transition);
+}
+
+.header__frame:nth-child(2) {
+    transform: rotate(20deg);
+    top: -2rem;
+    left: 2rem;
+}
+
+.header__frames:hover .header__frame {
+    transform: rotate(0);
+}
+
+.header__frames:hover .header__frame:nth-child(2) {
+    top: 0;
+    left: 15rem;
 }
