@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
+  <!-- IconScout -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- JavaScript -->
+  <script src="./main.js" defer></script>
   <title>Photography Portfolio</title>
 </head>
 <body>
+  <!------------------------- BEGINNING OF NAVBAR ------------------------->
   <nav>
     <div class="container nav__container">
-      <a href="index.html"><img src="./img/logo.png" alt="Nav logo"></a>      
+      <a href="index.html" class="nav__logo"><img src="./img/logo.png" alt="Nav logo"></a>      
       <ul  class="nav__links">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -19,11 +24,15 @@
         <li><a href="#exhibition">Exhibition</a></li>
       </ul>
       <ul class="nav__socials">
-        <li><a href="https://instagram.com" target="_blank"></a></li>
-        <li><a href="https://instagram.com" target="_blank"></a></li>
-        <li><a href="https://instagram.com" target="_blank"></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="uil uil-twitter"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="uil uil-youtube"></i></a></li>
       </ul>
+      <buttom class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></buttom>
+      <buttom class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></buttom>
     </div>
-  </nav>    
+  </nav>
+  <!------------------------- END OF NAVBAR ------------------------->
+
 </body>
 </html>
