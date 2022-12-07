@@ -53,6 +53,7 @@ body {
     line-height: 1.7;
     color: var(--color-light);
     background: var(--color-bg-3);
+    background-image: url("./img/bg-texture.png");
 }
 
 h1,
@@ -157,7 +158,7 @@ header {
     height: 100vh;
     position: relative;
     top: 0;
-    background: linear-gradient(var(--color-bg-3), var(--color-bg-1));
+    /* background: linear-gradient(var(--color-bg-3), var(--color-bg-1)); */
     /* overflow: hidden; */
 }
 
@@ -270,4 +271,40 @@ header {
 .header__frames:hover .header__frame:nth-child(2) {
     top: 0;
     left: 15rem;
+}
+
+/* General Syles for Contact Buttom ----------- */
+
+.contact__btn {
+    color: var(--color-bg-1);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.header__btn {
+    background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
+    position: absolute;
+    right: 6%;
+    bottom: -3rem;
+}
+
+.header__btn:hover {
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+    color: var(--color-bg-1);
+}
+
+.contact__btn i {
+    font-size: 3.5rem;
+    position: absolute;
+}
+
+.contact__btn p {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 10rem;
 }
