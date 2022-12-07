@@ -154,7 +154,7 @@ nav {
 /* =============================== HEADER =============================== */
 
 header {
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     position: relative;
     top: 0;
@@ -243,7 +243,7 @@ header {
 /* Animation - Bottom Picture ----------------- */
 .header__frames {
     position: absolute;
-    top: 88vh;
+    top: 87vh;
     right: 44rem;
     transition: var(--transition);
 }
@@ -307,4 +307,18 @@ header {
     font-weight: 600;
     width: 10rem;
     height: 10rem;
+    display: flex;
+    justify-content: center;
+    animation: spinText 30s linear infinite;
+}
+
+.contact__btn span {
+    position: absolute;
+    transform-origin: 0.3rem 5rem;
+}
+
+@keyframes spinText {
+    to {
+        transform: rotate(360deg);
+    }
 }
