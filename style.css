@@ -244,7 +244,7 @@ header {
 .header__frames {
     position: absolute;
     top: 87vh;
-    right: 44rem;
+    right: 35rem;
     transition: var(--transition);
 }
 
@@ -287,8 +287,8 @@ header {
 .header__btn {
     background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
     position: absolute;
-    right: 6%;
-    bottom: -3rem;
+    right: 13%;
+    bottom: 3rem;
 }
 
 .header__btn:hover {
