@@ -243,7 +243,7 @@ header {
 /* Animation - Bottom Picture ----------------- */
 .header__frames {
     position: absolute;
-    top: 87vh;
+    top: 90vh;
     right: 35rem;
     transition: var(--transition);
 }
@@ -288,7 +288,7 @@ header {
     background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
     position: absolute;
     right: 13%;
-    bottom: 3rem;
+    bottom: -1rem;
 }
 
 .header__btn:hover {
@@ -321,4 +321,10 @@ header {
     to {
         transform: rotate(360deg);
     }
+}
+
+/* ================================ ABOUT =============================== */
+
+.about__container {
+    margin-top: 8rem;
 }
