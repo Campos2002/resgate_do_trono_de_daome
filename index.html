@@ -2,15 +2,21 @@
 <html lang="en">
   
   <head>
+    <!-- Metas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- IconScout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- SwiperJS Script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" defer/>
     <!-- JavaScript -->
     <script src="./main.js" defer></script>
+    <!-- Title -->
     <title>Photography Portfolio</title>
   </head>
 
@@ -111,6 +117,25 @@
         </div>
       </div>
     </scetion>
+
+    <!------------------------------------------------------------------------------------------- GALLERY -->
+    
+    <section class="gallery">
+      <div class="container gallery__container">
+        <div class="gallery__head">
+          <h2 class="gallery__title">My Gallery</h2>
+          <div class="empty gallery__empty"></div>
+        </div>
+        <p>
+          Suspendisse malesuada nisi nunc, quis lacinia ex fringilla ac. Nam ullamcorper leo porttitor tellus sollicitudin, et vestibulum lorem consequat. In hac habitasse platea dictumst. Maecenas at convallis dolor.
+        </p>
+        <div class="swiper-wrapper">
+          <article class="swiper-slide">
+            <img src="./img/gallery1.jpg">
+          </article>
+        </div>
+      </div>
+    </section>
     
   </body>
 </html>

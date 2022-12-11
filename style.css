@@ -391,3 +391,11 @@ header {
     left: 1rem;
     bottom: 1rem;
 }
+
+.about__right {
+    margin-left: 6rem;
+}
+
+.about__right p {
+    margin: 0 4rem 1.5rem 0;
+}
