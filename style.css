@@ -53,7 +53,6 @@ body {
     line-height: 1.7;
     color: var(--color-light);
     background: var(--color-bg-3);
-    background-image: url("./img/bg-texture.png");
 }
 
 h1,
@@ -80,16 +79,16 @@ a:hover {
     color: var(--color-primary);
 }
 
-img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-}
-
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
     max-width: 2160px;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
 }
 
 /* =============================== NAVBAR =============================== */
@@ -158,29 +157,30 @@ header {
     height: 100vh;
     position: relative;
     top: 0;
-    /* background: linear-gradient(var(--color-bg-3), var(--color-bg-1)); */
-    /* overflow: hidden; */
+    background: linear-gradient(var(--color-bg-3), var(--color-bg-1));
+    overflow: hidden;
 }
 
 .header__container {
     display: grid;
     grid-template-columns: 40% 54%;
-    gap: 3%;
-    margin-top: 10rem;
+    gap: 4%;
+    margin-top: 5rem;
     position: relative;
 }
 
-.header__image-bg {
-    background-color: var(--color-bg-4);
-    height: 22rem;
-    width: 16rem;
-    position: absolute;
+.header__left {
+    padding-top: 4rem;
 }
 
 .header__head {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+}
+
+.header__image-sm {
+    margin-top: 5rem;
 }
 
 .empty {
@@ -210,6 +210,13 @@ header {
 
 /* HEADER ANIMATION SECTION ------------------------ */
 /* Animation - Girl Picture ------------------- */
+.header__image-bg {
+    background-color: var(--color-bg-4);
+    height: 22rem;
+    width: 16rem;
+    position: absolute;
+}
+
 .header__image-lg {
     width: 29rem;
     position: relative;
@@ -242,35 +249,13 @@ header {
 
 /* Animation - Bottom Picture ----------------- */
 .header__frames {
-    position: absolute;
-    top: 90vh;
-    right: 35rem;
-    transition: var(--transition);
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 25px;
+    width: 90%;
 
-.header__frame {
-    width: 14rem;
-    border: 0.4rem solid var(--color-bg-3);
-    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
-    position: absolute;
-    transform: rotate(-10deg);
-    transform-origin: bottom left;
-    transition: var(--transition);
-}
-
-.header__frame:nth-child(2) {
-    transform: rotate(20deg);
-    top: -2rem;
-    left: 2rem;
-}
-
-.header__frames:hover .header__frame {
-    transform: rotate(0);
-}
-
-.header__frames:hover .header__frame:nth-child(2) {
-    top: 0;
-    left: 15rem;
+    margin-top: 4rem;
 }
 
 /* General Syles for Contact Buttom ----------- */
@@ -287,8 +272,8 @@ header {
 .header__btn {
     background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
     position: absolute;
-    right: 13%;
-    bottom: -1rem;
+    right: 5rem;
+    bottom: 5rem;
 }
 
 .header__btn:hover {
@@ -303,7 +288,7 @@ header {
 }
 
 .contact__btn p {
-    font-size: 1rem;
+    font-size: 10px;
     font-weight: 600;
     width: 10rem;
     height: 10rem;
@@ -325,8 +310,14 @@ header {
 
 /* ================================ ABOUT =============================== */
 
+#about {
+    margin-top: 18rem;
+}
+
 .about__container {
-    margin-top: 8rem;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10rem;
     display: grid;
     grid-template-columns: 10rem 26rem auto;
     gap: 3rem;
@@ -334,6 +325,7 @@ header {
 }
 
 .about__title {
+    margin-top: 7rem;
     position: absolute;
     top: -7rem;
     z-index: 1;
@@ -399,3 +391,5 @@ header {
 .about__right p {
     margin: 0 4rem 1.5rem 0;
 }
+
+/* =============================== GALLERY ============================== */

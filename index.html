@@ -8,14 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
-    <!-- SwiperJS -->
+    <!-- SwiperJS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- IconScout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- SwiperJS Script -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" defer/>
-    <!-- JavaScript -->
-    <script src="./main.js" defer></script>
     <!-- Title -->
     <title>Photography Portfolio</title>
   </head>
@@ -63,11 +59,17 @@
           <h1>See The Beauty Of The World Through My Lens</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac commodo libero, sit amet vestibulum nisi. Cras commodo odio non egestas dapibus. Nam et felis dictum, mollis nunc non, vestibulum enim.</p>
           <a href="mailto:campereira91@gmail.com" class="header__btn-md">Let's Talk</a>
+          <div class="header__frames">            
+            <img src="./img/gallery7.jpg" alt="Header Frame One">          
+            <img src="./img/gallery9.jpg" alt="Header Frame Two">           
+            <img src="./img/gallery11.jpg" alt="Header Frame Thre">
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- Bottom Photos -->
+    <!-- Bottom Photos
     <div class="header__frames">
       <div class="header__frame">
         <img src="./img/frame1.jpg" alt="Header Frame One">
@@ -75,7 +77,7 @@
       <div class="header__frame">
         <img src="./img/frame2.jpg" alt="Header Frame Two">
       </div>
-    </div>
+    </div> -->
 
     <!-- E-mail Buttom -->
     <a href="mailto:campereira91@gmail.com" class="contact__btn header__btn">
@@ -104,7 +106,6 @@
           </div>
         </div>
         <div class="about__right">
-          <div class="empty about__empty"></div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in nunc magna. Ut pretium dolor sit amet tellus maximus, consequat semper eros faucibus.
           </p>
@@ -120,8 +121,8 @@
 
     <!------------------------------------------------------------------------------------------- GALLERY -->
     
-    <section class="gallery">
-      <div class="container gallery__container">
+    <section id="gallery">
+      <div class="container gallery__container swiper mySwiper">
         <div class="gallery__head">
           <h2 class="gallery__title">My Gallery</h2>
           <div class="empty gallery__empty"></div>
@@ -129,13 +130,38 @@
         <p>
           Suspendisse malesuada nisi nunc, quis lacinia ex fringilla ac. Nam ullamcorper leo porttitor tellus sollicitudin, et vestibulum lorem consequat. In hac habitasse platea dictumst. Maecenas at convallis dolor.
         </p>
+        
+        
         <div class="swiper-wrapper">
-          <article class="swiper-slide">
-            <img src="./img/gallery1.jpg">
-          </article>
-        </div>
+          <div class="swiper-slide"><img src="./img/gallery1.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery2.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery3.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery4.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery5.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery6.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery7.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery8.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery9.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery10.jpg"></div>
+          <div class="swiper-slide"><img src="./img/gallery11.jpg"></div>          
+        </div> 
+      <div class="swiper-pagination"></div>
       </div>
     </section>
+
     
+    <!------------------------------------------------------------------------------------------- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
