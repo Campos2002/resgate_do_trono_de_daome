@@ -17,7 +17,7 @@
   </head>
 
   <body>
-<!----------------------------------------------------------------------------------- BEGINNING OF NAVBAR -->
+<!------------------------------------------------------------------------------------------------ NAVBAR -->
 
     <nav>
       <div class="container nav__container">
@@ -53,49 +53,29 @@
         </div>
         <div class="header__right">
           <div class="header__head">
-            <div class="empty header__empty"></div>
-            <a class="header__tag">Best Travel Photographer 2022</a>
           </div>
           <h1>See The Beauty Of The World Through My Lens</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac commodo libero, sit amet vestibulum nisi. Cras commodo odio non egestas dapibus. Nam et felis dictum, mollis nunc non, vestibulum enim.</p>
           <a href="mailto:campereira91@gmail.com" class="header__btn-md">Let's Talk</a>
           <div class="header__frames">            
-            <img src="./img/gallery7.jpg" alt="Header Frame One">          
-            <img src="./img/gallery9.jpg" alt="Header Frame Two">           
-            <img src="./img/gallery11.jpg" alt="Header Frame Thre">
+            <img class="img-frame-header" src="./img/gallery7.jpg">          
+            <img class="img-frame-header" src="./img/gallery9.jpg">           
+            <img class="img-frame-header" src="./img/gallery11.jpg">
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Bottom Photos
-    <div class="header__frames">
-      <div class="header__frame">
-        <img src="./img/frame1.jpg" alt="Header Frame One">
-      </div>
-      <div class="header__frame">
-        <img src="./img/frame2.jpg" alt="Header Frame Two">
-      </div>
-    </div> -->
-
-    <!-- E-mail Buttom -->
-    <a href="mailto:campereira91@gmail.com" class="contact__btn header__btn">
-      <p>CONTACT - SEND ME AN E-MAIL</p>
-      <i class="uil uil-envelope"></i>
-    </a>
-
 <!------------------------------------------------------------------------------------------------- ABOUT -->
 
     <scetion id="about">
-      <div class="container about__container">
-        <h2 class="about__title">About<br>Flavia Degani</h2>
-        <a href="mailto:campereira91@gmail.com" class="contact__btn about__btn">
-          <i class="uil uil-envelope"></i>
-          <P>CONTACT - SEND ME AN E-MAIL</P>
-        </a>
-        <div class="about__left">
-          <div class="about__image">
+      <div class=" container about__container">
+      <p></p>
+      
+      <div class="about__left">
+        <h2 class="about__title">About<br>Flavia Degani</h2>         
+        <div class="about__image">
             <div class="about__image-bg"></div>
             <div class="about__image-lg">
               <img src="./img/about.jpg" alt="About Flavia Degani Image">
@@ -105,6 +85,7 @@
             </div>
           </div>
         </div>
+
         <div class="about__right">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in nunc magna. Ut pretium dolor sit amet tellus maximus, consequat semper eros faucibus.
@@ -114,7 +95,7 @@
           </p>
           <p>
             Vivamus facilisis libero ac sapien sollicitudin fringilla. Pellentesque placerat lectus vitae mauris ultricies, quis rhoncus lectus tincidunt.
-          </p>
+          </p>        
         </div>
       </div>
     </scetion>
@@ -125,13 +106,7 @@
       <div class="container gallery__container swiper mySwiper">
         <div class="gallery__head">
           <h2 class="gallery__title">My Gallery</h2>
-          <div class="empty gallery__empty"></div>
-        </div>
-        <p>
-          Suspendisse malesuada nisi nunc, quis lacinia ex fringilla ac. Nam ullamcorper leo porttitor tellus sollicitudin, et vestibulum lorem consequat. In hac habitasse platea dictumst. Maecenas at convallis dolor.
-        </p>
-        
-        
+        </div>                
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./img/gallery1.jpg"></div>
           <div class="swiper-slide"><img src="./img/gallery2.jpg"></div>
@@ -154,7 +129,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",

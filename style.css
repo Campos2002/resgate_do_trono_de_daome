@@ -75,6 +75,12 @@ a {
     transition: var(--transition);
 }
 
+p {
+    font-size: 1.2rem;
+    color: var(--color-light);
+    line-height: 1.9;
+}
+
 a:hover {
     color: var(--color-primary);
 }
@@ -161,6 +167,11 @@ header {
     overflow: hidden;
 }
 
+.img-frame-header:hover {
+    border: 0.7rem solid var(--color-primary);
+    transition: var(--transition);
+}
+
 .header__container {
     display: grid;
     grid-template-columns: 40% 54%;
@@ -177,20 +188,11 @@ header {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+    padding-top: 3.5rem;
 }
 
 .header__image-sm {
     margin-top: 5rem;
-}
-
-.empty {
-    height: 1.4rem;
-    width: 18rem;
-    background: var(--color-bg-2);
-    border-radius: calc(3.5rem / 2);
-    margin-bottom: 3.5rem;
-    box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--color-bg-4);
 }
 
 .header__tag {
@@ -247,65 +249,13 @@ header {
     opacity: 0;
 }
 
-/* Animation - Bottom Picture ----------------- */
 .header__frames {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 25px;
     width: 90%;
-
     margin-top: 4rem;
-}
-
-/* General Syles for Contact Buttom ----------- */
-
-.contact__btn {
-    color: var(--color-bg-1);
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-}
-
-.header__btn {
-    background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
-    position: absolute;
-    right: 5rem;
-    bottom: 5rem;
-}
-
-.header__btn:hover {
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
-    transform: translateY(-1rem);
-    color: var(--color-bg-1);
-}
-
-.contact__btn i {
-    font-size: 3.5rem;
-    position: absolute;
-}
-
-.contact__btn p {
-    font-size: 10px;
-    font-weight: 600;
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    animation: spinText 30s linear infinite;
-}
-
-.contact__btn span {
-    position: absolute;
-    transform-origin: 0.3rem 5rem;
-}
-
-@keyframes spinText {
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 /* ================================ ABOUT =============================== */
@@ -315,30 +265,23 @@ header {
 }
 
 .about__container {
+    padding: 10rem;
     align-items: center;
     height: 100vh;
-    margin-top: 10rem;
+    width: 100vw;
     display: grid;
     grid-template-columns: 10rem 26rem auto;
     gap: 3rem;
     position: relative;
+    background-image: url(./img/bg-texture.png);
 }
 
 .about__title {
-    margin-top: 7rem;
+    position: relative;
+    left: 10%;
+    bottom: 78%;
     position: absolute;
-    top: -7rem;
     z-index: 1;
-}
-
-.about__btn {
-    color: var(--color-primary-variant);
-    align-self: end;
-}
-
-.about__btn:hover {
-    transform: translateY(-1rem);
-    color: var(--color-primary)
 }
 
 .about__image {
@@ -354,6 +297,7 @@ header {
 }
 
 .about__image-lg {
+    margin-top: 3rem;
     position: relative;
     left: 1rem;
     bottom: 1rem;
@@ -379,17 +323,29 @@ header {
 .about__image:hover .about__image-lg {
     filter: saturate(1) brightness(1);
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
-    border: 1rem solid var(--color-bg-4);
+    border: 1rem solid var(--color-primary);
     left: 1rem;
     bottom: 1rem;
 }
 
 .about__right {
     margin-left: 6rem;
-}
-
-.about__right p {
-    margin: 0 4rem 1.5rem 0;
+    margin-top: 6rem;
 }
 
 /* =============================== GALLERY ============================== */
+
+.gallery__container {
+    width: auto;
+    height: auto;
+}
+
+.gallery__title {
+    margin-bottom: 2rem;
+}
+
+.gallery__head {
+    align-items: center;
+    justify-content: end;
+    display: flex;
+}
