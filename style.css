@@ -167,11 +167,6 @@ header {
     overflow: hidden;
 }
 
-.img-frame-header:hover {
-    border: 0.7rem solid var(--color-primary);
-    transition: var(--transition);
-}
-
 .header__container {
     display: grid;
     grid-template-columns: 40% 54%;
@@ -211,7 +206,18 @@ header {
 }
 
 /* HEADER ANIMATION SECTION ------------------------ */
-/* Animation - Girl Picture ------------------- */
+
+.img-frame-header:hover {
+    border: 0.5rem solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.header__title:hover {
+    color: #ff7b02;
+    font-size: 4.3rem;
+    transition: var(--transition);
+}
+
 .header__image-bg {
     background-color: var(--color-bg-4);
     height: 22rem;
@@ -268,7 +274,7 @@ header {
     padding: 10rem;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     display: grid;
     grid-template-columns: 10rem 26rem auto;
     gap: 3rem;
@@ -335,17 +341,44 @@ header {
 
 /* =============================== GALLERY ============================== */
 
-.gallery__container {
-    width: auto;
-    height: auto;
-}
+#gallery {
 
-.gallery__title {
-    margin-bottom: 2rem;
+    background: linear-gradient(var(--color-bg-4), var(--color-bg-2));
 }
 
 .gallery__head {
-    align-items: center;
-    justify-content: end;
     display: flex;
+    justify-content: space-between;
+}
+
+.gallery__head h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: end;
+    width: 100vw;
+}
+
+.swiper-wrapper {
+    /* height: 37rem; */
+    padding-bottom: 5rem;
+}
+
+.swiper-slide {
+    border: 0.5rem solid var(--color-bg-2);
+    height: fit-content;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.swiper-slide:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.swiper-slide img {
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.swiper-slide img:hover {
+    filter: saturate(1);
 }
