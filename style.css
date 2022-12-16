@@ -342,25 +342,24 @@ header {
 /* =============================== GALLERY ============================== */
 
 #gallery {
-
     background: linear-gradient(var(--color-bg-4), var(--color-bg-2));
 }
 
 .gallery__head {
     display: flex;
     justify-content: space-between;
+    background: red;
 }
 
 .gallery__head h2 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     text-align: end;
     width: 100vw;
 }
 
 .swiper-wrapper {
-    /* height: 37rem; */
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .swiper-slide {
@@ -379,6 +378,10 @@ header {
     transition: var(--transition);
 }
 
-.swiper-slide img:hover {
+.swiper-slide:hover img {
     filter: saturate(1);
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary);
 }
