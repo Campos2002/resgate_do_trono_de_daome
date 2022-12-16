@@ -163,7 +163,7 @@ header {
     height: 100vh;
     position: relative;
     top: 0;
-    background: linear-gradient(var(--color-bg-3), var(--color-bg-1));
+    background: linear-gradient(var(--color-bg-1), var(--color-bg-3));
     overflow: hidden;
 }
 
@@ -342,13 +342,12 @@ header {
 /* =============================== GALLERY ============================== */
 
 #gallery {
-    background: linear-gradient(var(--color-bg-4), var(--color-bg-2));
+    background: linear-gradient(var(--color-bg-2), var(--color-bg-3));
 }
 
 .gallery__head {
     display: flex;
     justify-content: space-between;
-    background: red;
 }
 
 .gallery__head h2 {
@@ -359,7 +358,7 @@ header {
 }
 
 .swiper-wrapper {
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
 }
 
 .swiper-slide {
@@ -382,6 +381,6 @@ header {
     filter: saturate(1);
 }
 
-.swiper-pagination-bullet {
-    background: var(--color-primary);
+.swiper-pagination {
+    margin-bottom: 3rem;
 }
