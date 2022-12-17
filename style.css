@@ -393,6 +393,8 @@ header {
     position: relative;
 }
 
+
+
 .exhibitions__head {
     display: grid;
     grid-template-columns: auto 10rem;
