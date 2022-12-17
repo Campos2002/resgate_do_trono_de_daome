@@ -146,7 +146,8 @@ nav {
 }
 
 .nav__socials a:hover {
-    box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    background: linear-gradient(var(--color-primary), var(--color-primary-variant));
 }
 
 /* Nav Class - Scroll Use - JS */
@@ -384,3 +385,5 @@ header {
 .swiper-pagination {
     margin-bottom: 3rem;
 }
+
+/* ============================= EXHIBITIONS ============================ */
