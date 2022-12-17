@@ -26,7 +26,7 @@
     --color-white: hsl(0, 0%, 90%);
     */
 
-    --container-width-lg: 88%;
+    --container-width-lg: 85%;
     --container-width-md: 92%;
 
     --transition: all 400ms ease;
@@ -100,7 +100,7 @@ img {
 /* =============================== NAVBAR =============================== */
 
 nav {
-    height: 5rem;
+    height: 3.7rem;
     width: 100vw;
     display: grid;
     place-items: center;
@@ -166,6 +166,7 @@ header {
     top: 0;
     background: linear-gradient(var(--color-bg-1), var(--color-bg-3));
     overflow: hidden;
+
 }
 
 .header__container {
@@ -272,7 +273,7 @@ header {
 }
 
 .about__container {
-    padding: 10rem;
+    padding: 7rem;
     align-items: center;
     height: 100vh;
     width: auto;
@@ -352,7 +353,7 @@ header {
 }
 
 .gallery__head h2 {
-    margin-top: 3rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
     text-align: end;
     width: 100vw;
@@ -383,7 +384,28 @@ header {
 }
 
 .swiper-pagination {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* ============================= EXHIBITIONS ============================ */
+
+.exhibitions__container {
+    position: relative;
+}
+
+.exhibitions__head {
+    display: grid;
+    grid-template-columns: auto 10rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.exhibitions__head>p {
+    width: 45rem;
+}
+
+.exhibitions__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
