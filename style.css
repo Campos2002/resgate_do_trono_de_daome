@@ -207,8 +207,6 @@ header {
     display: none;
 }
 
-/* HEADER ANIMATION SECTION ------------------------ */
-
 .img-frame-header:hover {
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
     border: 0.5rem solid var(--color-primary);
