@@ -210,6 +210,7 @@ header {
 /* HEADER ANIMATION SECTION ------------------------ */
 
 .img-frame-header:hover {
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
     border: 0.5rem solid var(--color-primary);
     transition: var(--transition);
 }
@@ -434,9 +435,58 @@ header {
 
 .exhibitions__gallery article:hover {
     box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.5);
-    border: 0.5rem solid var(--color-primary);
+    border: 0.5rem solid var(--color-primary-variant);
 }
 
 .exhibitions__gallery article img:hover {
     filter: saturate(1);
+}
+
+/* ================================ FOOTER ============================== */
+
+footer {
+    margin-top: 7rem;
+    background-image: url(./img/bg-texture.png);
+}
+
+.footer__container {
+    border-top: 0.5rem solid var(--color-bg-4);
+    padding: 5rem 0;
+    transition: var(--transition);
+}
+
+.footer__container:hover {
+    border-top: 0.5rem solid var(--color-primary);
+}
+
+.footer__head {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__btn {
+    width: 5rem;
+    height: 5rem;
+    border: 0.2rem solid var(--color-primary-variant);
+    border-radius: 50%;
+    font-size: 3rem;
+    color: var(--color-primary-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.footer__btn:hover {
+    border: 0.2rem solid var(--color-primary);
+    transform: translateY(-1rem);
+}
+
+.footer__links {
+    margin: 3rem 0 5rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.3rem;
 }
