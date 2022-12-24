@@ -1,7 +1,7 @@
 @media screen and (max-width: 1024px) {
     /* MEDIUM SCREENS */
 
-    /* GENERAL STYLES */
+    /* ==================== GENERAL STYLES ==================== */
 
     .container {
         width: var(--container-width-md);
@@ -17,7 +17,7 @@
         font-size: 2.5rem;
     }
 
-    /* NAVBAR */
+    /* ==================== NAVBAR ==================== */
 
     .nav__socials {
         display: none;
@@ -60,7 +60,7 @@
 
     }
 
-    /* HEADER */
+    /* ==================== HEADER ==================== */
 
     header {
         height: fit-content;
@@ -96,23 +96,20 @@
         display: none;
     }
 
-    .header__title:hover {
-        font-size: 2.5rem;
+    .header__btn {
+        margin-top: 1.7rem;
     }
 
-    .header__btn-md {
-        background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
-        color: var(--color-bg-1);
-        margin-top: 2rem;
-        display: inline-block;
-        padding: 0.6rem 1.6rem;
-        font-weight: 600;
-        border-radius: 0.3rem;
+    /* ==================== ABOUT ==================== */
+
+    .about__container {
+        grid-template-columns: 40% 54%;
+        gap: 6%;
     }
 
-    /* EXHIBITIONS */
-
-    .exhibitions__gallery {
-        gap: 1rem;
+    .about__image-bg,
+    .about__image-sm {
+        display: none;
     }
+
 }
