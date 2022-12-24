@@ -82,10 +82,15 @@
 
     .header__image-lg {
         filter: saturate(1);
-        border: 1rem solid var(--color-bg-2);
+        border: none;
         width: 100%;
         top: 0;
         left: 0;
+    }
+
+    .header__left:hover .header__image-lg {
+        border: none;
+        box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
     }
 
     .header__right p {
@@ -102,6 +107,30 @@
 
     /* ==================== ABOUT ==================== */
 
+    .about__container {
+        grid-template-columns: 40% 55%;
+        gap: 6%;
+    }
 
+    .about__image-bg,
+    .about__image-sm {
+        display: none;
+    }
+
+    .about__image-lg {
+        left: 0;
+        top: 0;
+        filter: saturate(1) brightness(1);
+    }
+
+    .about__image:hover .about__image-lg {
+        border: none;
+    }
+
+    /* ==================== EXHIBITIONS ==================== */
+
+    .exhibitions__gallery {
+        gap: 1rem;
+    }
 
 }

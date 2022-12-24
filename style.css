@@ -223,7 +223,7 @@ header {
 }
 
 .header__title {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .header__title:hover {
@@ -285,9 +285,11 @@ header {
 
 .about__container {
     display: grid;
-    grid-template-columns: 10rem 26rem auto;
+    grid-template-columns: 26rem 65rem;
     gap: 3rem;
     position: relative;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
 }
 
 .about__title {
@@ -334,6 +336,10 @@ header {
     filter: saturate(1) brightness(1);
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
     border: 1rem solid var(--color-bg-4);
+}
+
+.about__right p {
+    margin-left: 4rem;
 }
 
 
