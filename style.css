@@ -204,7 +204,13 @@ header {
 
 /* Only shows on Tablet and Phones */
 .header__btn-md {
-    display: none;
+    background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
+    color: var(--color-bg-1);
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
 }
 
 .img-frame-header:hover {
