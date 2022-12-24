@@ -279,6 +279,63 @@ header {
 
 /* ================================ ABOUT =============================== */
 
+#about {
+    margin-top: 18rem;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 10rem 26rem auto;
+    gap: 3rem;
+    position: relative;
+}
+
+.about__title {
+    position: absolute;
+    top: -7rem;
+    z-index: 1;
+}
+
+.about__image {
+    position: relative;
+}
+
+.about__image-bg {
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    bottom: 0;
+    background: var(--color-bg-4);
+}
+
+.about__image-lg {
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: 500ms ease;
+}
+
+.about__image-sm {
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    height: 22rem;
+    width: 22rem;
+    overflow: hidden;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.about__image:hover .about__image-sm {
+    opacity: 0;
+}
+
+.about__image:hover .about__image-lg {
+    filter: saturate(1) brightness(1);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+    border: 1rem solid var(--color-bg-4);
+}
+
 
 
 /* =============================== GALLERY ============================== */

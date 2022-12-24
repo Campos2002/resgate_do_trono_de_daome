@@ -102,14 +102,6 @@
 
     /* ==================== ABOUT ==================== */
 
-    .about__container {
-        grid-template-columns: 40% 54%;
-        gap: 6%;
-    }
 
-    .about__image-bg,
-    .about__image-sm {
-        display: none;
-    }
 
 }
