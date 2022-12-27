@@ -288,13 +288,13 @@ header {
     grid-template-columns: 26rem 65rem;
     gap: 3rem;
     position: relative;
-    margin-top: 7rem;
+    margin-top: 12rem;
     margin-bottom: 4rem;
 }
 
 .about__title {
     position: absolute;
-    top: -7rem;
+    top: -9rem;
     z-index: 1;
 }
 

@@ -14,15 +14,21 @@ const openNav = () => {
     closeNavBtn.style.display = 'inline-block';
 };
 
+openNavBtn.addEventListener('click', openNav);
+
 const closeNav = () => {
     nav.style.display = 'none';
     openNavBtn.style.display = 'inline-block';
     closeNavBtn.style.display = 'none';
 };
 
-openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
-nav.querySelectorAll('li a').forEach(navLink => { navLink.addEventListener('click', closeNav) })
+
+if (document.body.clientWidth < 1080) {
+    nav.querySelectorAll('li a').forEach(navLink => {
+        navLink.addEventListener('click', closeNav);
+    });
+};
 
 //Swiper JS.
 var swiper = new Swiper(".mySwiper", {
@@ -34,8 +40,8 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         599: {
-            slidesPerView: 2,
-            spaceBetween: 40
+            slidesPerView: 3,
+            spaceBetween: 20
         },
         999: {
             slidesPerView: 3,
