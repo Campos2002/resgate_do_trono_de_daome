@@ -1,0 +1,29 @@
+:root {
+    /* Green Theme */
+
+    --color-primary: #ff7b02;
+    --color-primary-variant: #e5a55d;
+    --color-bg-1: #000e17;
+    --color-bg-2: #001e2d;
+    --color-bg-3: #012734;
+    --color-bg-4: #003347;
+    --color-light: #85a2b2;
+    --color-white: hsl(0, 0%, 90%);
+
+    /* Green Theme */
+
+    /* --color-primary: #ff7b02;
+    --color-primary-variant: #e5a55d;
+    --color-bg-1: #140021;
+    --color-bg-2: #1e0032;
+    --color-bg-3: #25003e;
+    --color-bg-4: #36005a;
+    --color-light: #d0b8e0;
+    --color-white: hsl(0, 0%, 90%); */
+
+
+    --container-width-lg: 85%;
+    --container-width-md: 92%;
+
+    --transition: all 400ms ease;
+}

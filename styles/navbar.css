@@ -1,0 +1,57 @@
+nav {
+    height: 3.7rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__toggle-btn {
+    display: none;
+}
+
+.nav__logo {
+    width: 7.5rem;
+}
+
+.nav__links {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__socials a {
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    background: linear-gradient(var(--color-primary-variant), var(--color-primary));
+    border-radius: 0.3rem;
+    color: var(--color-bg-4);
+    place-items: center;
+}
+
+.nav__socials a:hover {
+    border-radius: 1rem;
+    background: linear-gradient(var(--color-primary), var(--color-primary-variant));
+}
+
+/* Nav Class - Scroll Use - JS */
+.window-scrolled {
+    background: var(--color-bg-2);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
