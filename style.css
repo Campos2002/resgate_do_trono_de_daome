@@ -197,9 +197,11 @@ header {
 }
 
 .header__right p {
-    margin-top: 1.7rem;
-    margin-bottom: 1rem;
-    width: 85%;
+    margin-top: 3rem;
+    margin-bottom: 0.6rem;
+    width: 90%;
+    text-align: justify;
+    font-size: 1rem;
 }
 
 .header__btn {
@@ -224,6 +226,7 @@ header {
 
 .header__title {
     font-size: 3rem;
+    margin-top: 3rem;
 }
 
 .header__title:hover {
