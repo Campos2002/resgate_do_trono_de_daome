@@ -43,9 +43,10 @@ a {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color-light);
     line-height: 1.9;
+    text-align: justify;
 }
 
 a:hover {
