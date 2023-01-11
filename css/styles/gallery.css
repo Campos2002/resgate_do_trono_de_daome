@@ -2,16 +2,38 @@
     background: linear-gradient(var(--color-bg-2), var(--color-bg-3));
 }
 
-.gallery__head {
+.gallery__title {
     display: flex;
     justify-content: space-between;
 }
 
-.gallery__head h2 {
+.gallery__title h2 {
     margin-top: 7rem;
-    margin-bottom: 2rem;
-    text-align: end;
+    margin-bottom: 3rem;
+    text-align: center;
     width: 100vw;
+}
+
+.gallery__text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.gallery__text p {
+    text-align: center;
+    width: 55rem;
+}
+
+.gallery__text__credits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.gallery__text__credits p {
+    text-align: center;
+    color: var(--color-primary-variant);
 }
 
 .swiper-wrapper {

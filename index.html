@@ -7,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/general_styles.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/gallery.css">
-    <link rel="stylesheet" href="./styles/exhibitions.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./css/styles/variables.css">
+    <link rel="stylesheet" href="./css/styles/general_styles.css">
+    <link rel="stylesheet" href="./css/styles/navbar.css">
+    <link rel="stylesheet" href="./css/styles/header.css">
+    <link rel="stylesheet" href="./css/styles/about.css">
+    <link rel="stylesheet" href="./css/styles/gallery.css">
+    <link rel="stylesheet" href="./css/styles/exhibitions.css">
+    <link rel="stylesheet" href="./css/styles/footer.css">
     <!-- Media Queries -->
-    <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="stylesheet" href="./css/styles/media_query.css">
     <!-- SwiperJS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- IconScout CDN-->
@@ -80,9 +80,8 @@
 
     <!------------------------------------------------------------------------------------------------- ABOUT -->
 
-    <scetion id="about">
-      <div class=" container about__container">
-        
+    <div id="about">
+      <div class=" container about__container">        
         <div class="about__left">
         <h2 class="about__title">Sobre<br>Oséias Casanova</h2>         
         <div class="about__image">
@@ -102,15 +101,27 @@
           </p>  
         </div>
       </div>
-    </scetion>
+    </div>
 
     <!------------------------------------------------------------------------------------------- GALLERY -->
     
     <section id="gallery">
       <div class="container gallery__container swiper mySwiper">
-        <div class="gallery__head">
-          <h2>Galeria</h2>
-        </div>                
+        
+        <div class="gallery__title">
+          <h2>As Amazonas do Daomé</h2>         
+        </div>
+        <div class="gallery__text">
+          <p>
+            “O valor das amazonas é real. Treinadas desde a infância com os mais árduos exercícios, constantemente incitadas à guerra, elas levavam às batalhas uma fúria verdadeira e um ardor sanguinário... Inspirando com sua coragem e sua energia indomável tropas que as seguiam”
+          </p>
+        </div>
+        <div class="gallery__text__credits">
+          <p>
+
+          </p>
+        </div>
+        
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./img/1.jpg"></div>
           <div class="swiper-slide"><img src="./img/2.jpg"></div>
@@ -132,7 +143,7 @@
     
     <section id="exhibitions">
       <div class="container exhibitions__container">
-                <br>
+        <br>
         <br>
         <br>
         <h2 class="exhibitions__title">Exibições</h2><br>
