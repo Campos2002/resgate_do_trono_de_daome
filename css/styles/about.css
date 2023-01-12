@@ -1,5 +1,5 @@
 #about {
-    margin-top: 18rem;
+    margin-top: 8.5rem;
 }
 
 .about__container {
@@ -7,7 +7,6 @@
     grid-template-columns: 26rem 65rem;
     gap: 3rem;
     position: relative;
-    margin-top: 12rem;
     margin-bottom: 4rem;
 }
 
