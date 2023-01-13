@@ -14,10 +14,7 @@ header {
     gap: 4%;
     margin-top: 5rem;
     position: relative;
-}
-
-.header__left {
-    padding-top: 4rem;
+    top: 7rem;
 }
 
 .header__head {
@@ -44,16 +41,6 @@ header {
     margin-bottom: 0.4rem;
     width: 90%;
     text-align: justify;
-}
-
-.header__btn {
-    background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
-    color: var(--color-bg-1);
-    margin-top: 3rem;
-    display: inline-block;
-    padding: 0.6rem 1.6rem;
-    font-weight: 600;
-    border-radius: 0.3rem;
 }
 
 .header__btn:hover {
@@ -92,13 +79,17 @@ header {
     transition: var(--transition);
 }
 
+.header__image-2 {
+    display: none;
+}
+
 .header__image-sm {
     width: 28rem;
     height: 28rem;
     overflow: hidden;
-    position: absolute;
-    left: 6rem;
-    top: 6rem;
+    position: relative;
+    left: 7rem;
+    top: -37.5rem;
     transition: var(--transition);
 }
 

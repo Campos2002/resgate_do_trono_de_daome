@@ -14,6 +14,7 @@
 
     h2 {
         font-size: 2.5rem;
+        color: var(--color-primary-variant);
     }
 
     /* ==================== NAVBAR ==================== */
@@ -63,7 +64,6 @@
 
     header {
         height: fit-content;
-        padding: 14rem 0 12rem;
         display: grid;
         place-items: center;
     }
@@ -83,13 +83,21 @@
         filter: saturate(1);
         border: none;
         width: 100%;
-        top: 0;
+        top: 6rem;
         left: 0;
     }
 
     .header__left:hover .header__image-lg {
         border: none;
         box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
+        top: 6rem;
+    }
+
+    .header__image-2 {
+        display: block;
+        position: relative;
+        top: 10rem;
+        height: 100%;
     }
 
     .header__right p {
@@ -100,8 +108,8 @@
         display: none;
     }
 
-    .header__btn {
-        margin-top: 1.7rem;
+    .header__left {
+        padding-top: 0;
     }
 
     /* ==================== ABOUT ==================== */
@@ -109,7 +117,7 @@
     .about__container {
         grid-template-columns: 40% 55%;
         gap: 6%;
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
 
     .about__image-bg,
@@ -119,7 +127,7 @@
 
     .about__image-lg {
         left: 0;
-        top: 0;
+        top: 1rem;
         filter: saturate(1) brightness(1);
     }
 
@@ -129,6 +137,7 @@
 
     .about__right p {
         margin-left: 0.5rem;
+        margin-top: 8rem;
     }
 
     .about__title {
@@ -149,28 +158,28 @@
     h2 {
         font-size: 2rem;
         line-height: 1.3;
-        color: var(--color-white);
+        color: var(--color-primary-variant);
     }
-
-    header {
-        padding: 0;
-        padding-bottom: 0;
-    }
-
 
     .header__container {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 2rem;
         text-align: center;
+    }
+
+    .header__image-lg {
+        top: 0;
     }
 
     .header__title {
         font-size: 2rem;
     }
 
-    .header__btn {
-        margin-bottom: 7rem;
+    .header__image-2 {
+        display: none;
     }
+
+    /* ==================== ABOUT ==================== */
 
     .about__container {
         grid-template-columns: 1fr;
@@ -179,12 +188,15 @@
     }
 
     .about__title {
-        text-align: left;
+        width: 17rem;
     }
 
     .about__right p {
-        width: 95%;
+        margin-left: 0;
+        margin-top: 2rem;
     }
+
+    /* ==================== EXHIBITIONS ==================== */
 
     .exhibitions__head {
         grid-template-columns: 1fr;
@@ -205,6 +217,8 @@
         margin-bottom: 1rem;
         border: none;
     }
+
+    /* ==================== FOOTER ==================== */
 
     .footer__container {
         text-align: center;
