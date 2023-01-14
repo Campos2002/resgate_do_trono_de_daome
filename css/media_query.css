@@ -208,11 +208,11 @@
         place-items: center;
     }
 
-    .two {
+    .project__image {
         display: none;
     }
 
-    .title {
+    .project__title {
         text-align: center;
         position: static;
         margin: 3rem 0;

@@ -6,11 +6,11 @@
     place-items: center;
 }
 
-.two {
+.project__image {
     width: 23rem;
 }
 
-.title {
+.project__title {
     position: relative;
     left: 57%;
     top: 3.7rem;
