@@ -1,0 +1,78 @@
+header {
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient(var(--color-bg-1), var(--color-bg-3));
+    overflow: hidden;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 40% 54%;
+    gap: 4%;
+    margin-top: 5rem;
+    position: relative;
+    top: 7rem;
+}
+
+.header__left:hover .header__image-lg {
+    filter: saturate(1) brightness(1);
+    border: 1rem solid var(--color-bg-4);
+    top: 0;
+    left: 0;
+}
+
+.header__left:hover .header__image-sm {
+    opacity: 0;
+}
+
+.header__image-bg {
+    background-color: var(--color-bg-4);
+    height: 22rem;
+    width: 16rem;
+    position: absolute;
+}
+
+.header__image-lg {
+    width: 29rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: var(--transition);
+}
+
+.header__image-sm {
+    width: 28rem;
+    height: 28rem;
+    overflow: hidden;
+    position: relative;
+    left: 7rem;
+    top: -37.5rem;
+    transition: var(--transition);
+}
+
+.header__image-sm {
+    margin-top: 5rem;
+}
+
+.header__image-2 {
+    display: none;
+}
+
+.header__title {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.header__right p {
+    margin-top: 3rem;
+    margin-bottom: 0.4rem;
+    width: 90%;
+    text-align: justify;
+}
+
+.header__creditos {
+    color: var(--color-primary-variant);
+}

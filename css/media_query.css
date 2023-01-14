@@ -90,7 +90,6 @@
     .header__left:hover .header__image-lg {
         border: none;
         box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
-        top: 6rem;
     }
 
     .header__image-2 {
@@ -120,6 +119,10 @@
         margin-top: 5rem;
     }
 
+    .about__title {
+        top: -7rem;
+    }
+
     .about__image-bg,
     .about__image-sm {
         display: none;
@@ -138,10 +141,6 @@
     .about__right p {
         margin-left: 0.5rem;
         margin-top: 8rem;
-    }
-
-    .about__title {
-        top: -7rem;
     }
 
     /* ==================== EXHIBITIONS ==================== */
