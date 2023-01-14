@@ -111,6 +111,26 @@
         padding-top: 0;
     }
 
+    /* ==================== PROJECT ==================== */
+
+    .project__container {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        place-items: center;
+    }
+
+    .two {
+        width: 23rem;
+    }
+
+    .title {
+        position: relative;
+        left: 57%;
+        top: 3.7rem;
+    }
+
     /* ==================== ABOUT ==================== */
 
     .about__container {
@@ -176,6 +196,26 @@
 
     .header__image-2 {
         display: none;
+    }
+
+    /* ==================== PROJECT ==================== */
+
+    .project__container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        place-items: center;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+        position: static;
+        margin: 3rem 0;
     }
 
     /* ==================== ABOUT ==================== */
