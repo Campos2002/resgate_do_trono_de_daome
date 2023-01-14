@@ -198,26 +198,6 @@
         display: none;
     }
 
-    /* ==================== PROJECT ==================== */
-
-    .project__container {
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 2rem;
-        margin-bottom: 4rem;
-        place-items: center;
-    }
-
-    .project__image {
-        display: none;
-    }
-
-    .project__title {
-        text-align: center;
-        position: static;
-        margin: 3rem 0;
-    }
-
     /* ==================== ABOUT ==================== */
 
     .about__container {
@@ -228,11 +208,16 @@
 
     .about__title {
         width: 17rem;
+        margin-left: 0;
     }
 
     .about__right p {
         margin-left: 0;
         margin-top: 2rem;
+    }
+
+    .about__image {
+        margin-left: 0;
     }
 
     /* ==================== EXHIBITIONS ==================== */
