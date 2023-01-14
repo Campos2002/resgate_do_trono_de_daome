@@ -1,0 +1,17 @@
+.project__container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    place-items: center;
+}
+
+.two {
+    width: 23rem;
+}
+
+.title {
+    position: relative;
+    left: 57%;
+    top: 3.7rem;
+}
