@@ -1,13 +1,6 @@
 /* Google Fonts - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-@font-face {
-    font-family: 'African';
-    src: url('/fonts/ZenzeroGroteskSans.otf') format('opentype'), url('/fonts/ZenzeroGroteskSans.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
