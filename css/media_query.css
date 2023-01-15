@@ -198,6 +198,20 @@
         display: none;
     }
 
+    /* ==================== PROJECT ==================== */
+
+    .project__container {
+        grid-template-columns: 1fr;
+    }
+
+    .project__title {
+        margin-top: 3rem;
+    }
+
+    .project__image img {
+        width: 21rem;
+    }
+
     /* ==================== ABOUT ==================== */
 
     .about__container {
