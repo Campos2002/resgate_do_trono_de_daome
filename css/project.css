@@ -1,7 +1,8 @@
 .project__title {
     width: auto;
-    text-align: center;
+    text-align: left;
     margin-bottom: 3rem;
+    margin-left: 8.7rem;
 }
 
 .project__container {

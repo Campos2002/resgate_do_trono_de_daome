@@ -206,6 +206,8 @@
 
     .project__title {
         margin-top: 3rem;
+        text-align: center;
+        margin-left: 0;
     }
 
     .project__image {
