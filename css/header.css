@@ -64,7 +64,7 @@ header {
 .header__title {
     font-size: 3rem;
     margin-top: 3rem;
-    font-family: 'African Font', sans-serif;
+    font-family: 'African Font', 'Montserrat', sans-serif;
 }
 
 .header__right p {
