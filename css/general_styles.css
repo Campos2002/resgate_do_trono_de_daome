@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-    font-family: 'African Font';
+    font-family: 'African';
     src: url('/fonts/ZenzeroGroteskSans.otf') format('opentype'), url('/fonts/ZenzeroGroteskSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -34,6 +34,7 @@ h2 {
     line-height: 1.1;
     font-weight: 400;
     color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {

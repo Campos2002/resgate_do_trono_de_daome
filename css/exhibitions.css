@@ -49,7 +49,3 @@
 .exhibitions__gallery article img:hover {
     filter: saturate(1);
 }
-
-.exhibitions__title {
-    font-family: 'African Font', sans-serif;
-}

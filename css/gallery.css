@@ -5,7 +5,6 @@
 .gallery__title {
     display: flex;
     justify-content: space-between;
-    font-family: 'African Font', sans-serif;
 }
 
 .gallery__title h2 {
