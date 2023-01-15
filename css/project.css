@@ -8,12 +8,10 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5rem;
-}
-
-.project__container {
     text-align: justify;
+    margin-bottom: 4rem;
 }
 
 .project__image {
-    width: 20rem;
+    width: 25rem;
 }
