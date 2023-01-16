@@ -1,6 +1,13 @@
 /* Google Fonts - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family: "africa sans";
+    src: url("../fonts/zenzero.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +34,7 @@ h2 {
     line-height: 1.1;
     font-weight: 400;
     color: var(--color-white);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'africa sans', 'Montserrat', serif;
 }
 
 h1 {
