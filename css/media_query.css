@@ -236,7 +236,7 @@
         margin-left: 0;
     }
 
-    /* ==================== EXHIBITIONS ==================== */
+    /* ==================== EXHIBITIONS ====================
 
     .exhibitions__head {
         grid-template-columns: 1fr;
@@ -256,6 +256,16 @@
         height: fit-content;
         margin-bottom: 1rem;
         border: none;
+    } */
+
+    /* ==================== VIDEO ===================== */
+
+    .video__container {
+        margin: 1rem;
+    }
+
+    .video {
+        height: 23rem;
     }
 
     /* ==================== FOOTER ==================== */

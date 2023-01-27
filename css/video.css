@@ -1,0 +1,16 @@
+.video__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 45rem;
+    height: 30rem;
+}
+
+.video__title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
